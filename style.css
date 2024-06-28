@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+html {
+    font-size: 0.8333333333vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 1.3333334vw;
+    }
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 4.102564103vw;
+    }
+}
+
+body {
+    background-color: #000;
+}
+
+h1::selection,
+h2::selection,
+p::selection,
+a::selection,
+input::selection {
+    background-color: #e50914;
+    color: #fff;
+}
+
+
+/* Header  */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    background-image: url("assets/images/bg-img-hero.jpg");
+    background-position: center center;
+    height: 43.75rem;
+    border-bottom: 0.125rem solid #232323;
+}
+
+main .box {
+    height: 43.75rem;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: #000;
+}
+
+
+header {
+    position: relative;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+button,
+.submit-btn {
+    transition: 0.5s ease;
+}
+
+button:hover,
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: #ff1924 !important;
+    transition: 0.5s ease;
+}
+
+
+.header-nav button {
+    background-color: rgb(229, 9, 20);
+    border: none;
+    padding: 0.313rem 0.938rem;
+    color: #fff;
+    font-size: 0.938rem;
+    border-radius: 0.313rem;
+    font-weight: 500;
+}
+
+
+.header-hero-section .logo {
+    width: 9.25rem;
+    height: 2.5rem;
+}
+
+.header-hero-section .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.875rem 0;
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(43.75rem - 6.25rem);
+    text-align: center;
+}
+
+.global-heading {
+    color: #fff;
+    font-size: 2.875rem;
+    font-weight: 900;
+    line-height: 4.375rem;
+}
+
+.para-1 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.para-2 {
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.938rem 0;
+    line-height: 1.875rem;
+}
+
+input.email-field {
+    background: rgba(22, 22, 22, 0.7);
+    border: 0.063rem solid #5f5f5f;
+    height: 3.125rem;
+    width: 25rem;
+    border-radius: 0.313rem;
+}
+
+input.email-field::placeholder {
+    font-size: 1rem;
+    color: rgb(190 190 165);
+}
+
+input.email-field {
+    color: rgb(190 190 165);
+    font-size: 1rem;
+    padding-left: 1.25rem;
+}
+
+input.submit-btn {
+    background-color: rgb(229, 9, 20);
+    border: none;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 0.438rem 2.5rem 0 1.563rem;
+    border-radius: 0.313rem;
+    cursor: pointer;
+    line-height: 2;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+form svg {
+    width: 3.125rem;
+    height: 3.125rem;
+    fill: #fff;
+    position: absolute;
+    right: 41.625rem;
+}
+
+/* Section 1 */
+
+.sec-1 {
+    border-top: 0.625rem solid #232323;
+    position: relative;
+}
+
+.sec-col-1 .para-2 {
+    width: 65%;
+}
+
+.sec-col-1 .global-heading {
+    width: 70%;
+}
+
+.sec-col-2 img {
+    width: 41.875rem;
+}
+
+.sec-1 .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3.125rem 0;
+}
+
+.video {
+    position: absolute;
+    top: 9.813rem;
+    right: 18.063rem;
+}
+
+/* Section 2  */
+
+.sec-1.sec-row-reverse .container {
+    flex-direction: row-reverse;
+}
+
+.download-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.25rem;
+    border: 0.125rem solid #808080b3;
+    width: 22.5rem;
+    margin: 0 auto;
+    border-radius: 0.625rem;
+    padding: 0.625rem 0;
+    position: absolute;
+    bottom: 6.25rem;
+    background: #000;
+    left: 21.563rem;
+}
+
+.download-section .thumb-img {
+    width: 3.563rem;
+    height: 5rem;
+}
+
+.download-section .download-gif {
+    width: 3rem;
+    height: 3rem;
+}
+
+.download-section .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.download-section h2 {
+    color: #fff;
+    font-size: 0.938rem;
+}
+
+.download-section p {
+    color: #0071eb;
+    font-size: 0.813rem;
+}
+
+.download-section .content-thumbnail {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+/* FAQ Section  */
+
+.faq {
+    border-top: 0.625rem solid #232323;
+    padding: 3.125rem 0;
+}
+
+.faq .global-heading {
+    text-align: center;
+}
+
+.faq .faq-tabs img {
+    height: 2.25rem;
+}
+
+.faq .faq-tabs {
+    padding-top: 1.25rem;
+}
+
+.faq .faq-tabs .tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 1.25rem 1.25rem;
+    margin-bottom: 0.625rem;
+    transition: 0.5s ease;
+}
+
+.faq .faq-tabs .tab:hover {
+    cursor: pointer;
+    background-color: rgb(65, 65, 65);
+    transition: 0.5s ease;
+
+}
+
+.email-memebership-form {
+    padding: 3.125rem 0;
+}
+
+.email-memebership-form p {
+    text-align: center;
+}
+
+.email-memebership-form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Footer  */
+
+footer {
+    border-top: 0.625rem solid #232323;
+    padding: 3.125rem 0;
+}
+
+.main-footer-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-links {
+    width: 25%;
+}
+
+footer a {
+    color: #ffffffb3;
+    line-height: 2.5rem;
+    transition: 0.5s ease;
+}
+
+footer a:hover {
+    color: #e50914;
+    transition: 0.5s ease;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer .copyright {
+    color: #ffffffb3;
+    padding-top: 1.875rem;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    margin-top: 1.25rem;
+    border: 0.063rem solid #5b5b5b;
+    width: 7.813rem;
+    background-color: #0f0f0f;
+    border-radius: 0.313rem;
+    height: 2.188rem;
+    transition: 0.5s ease;
+}
+
+.language-switcher:hover {
+    cursor: pointer;
+    background-color: #e50914;
+    border: 0.063rem solid #e50914;
+    transition: 0.5s ease;
+}
+
+.language-switcher .language-name {
+    color: #fff;
+    margin-top: 0.25rem;
+}
+
+.language-switcher .language-icon {
+    margin-left: 0.625rem;
+}
+
+/* Scrollbar Styling  */
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0;
+    border-radius: 0.375rem;
+    background-image: linear-gradient(220deg, #e50914 0%, #e50914 79%);
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: 0.438rem;
+}
+
+
+/* Media Query for Mobile  */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .sec-1 .container {
+        flex-direction: column;
+    }
+
+    .sec-1.sec-row-reverse .container {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .global-heading {
+        font-size: 2.188rem;
+        line-height: 2.5rem;
+    }
+
+    .para-1 {
+        font-size: 1.125rem;
+        padding-top: 0.625rem;
+    }
+
+    .para-2 {
+        font-size: 1rem;
+        padding-top: 0.625rem;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input.email-field {
+        width: 21.875rem;
+    }
+
+    form svg {
+        display: none;
+    }
+
+    input.submit-btn {
+        padding: 0.438rem 1.563rem 0 1.563rem;
+    }
+
+    .sec-col-1 .global-heading {
+        width: 100%;
+    }
+
+    .sec-col-1 .para-2 {
+        width: 100%;
+    }
+
+    .sec-col-2 img {
+        width: 100%;
+    }
+
+    .video {
+        top: 16.25rem;
+        right: 4.25rem;
+    }
+
+    .video video {
+        width: 15rem;
+    }
+
+    .download-section {
+        left: 1.688rem;
+        bottom: 1.25rem;
+        width: 20rem;
+    }
+
+    .faq .faq-tabs .tab {
+        padding: 0.625rem 0.938rem;
+    }
+
+    .faq .faq-tabs img {
+        height: 1.25rem;
+    }
+
+    .main-footer-links {
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+
+    input.submit-btn{
+        font-size: 1.125rem;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+}
